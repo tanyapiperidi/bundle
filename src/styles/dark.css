@@ -1,0 +1,33 @@
+.theme_dark {
+  /* ----------Фон текста---------- */
+  --text-background-color: rgb(255 0 112 / 1);
+  /* ----------Тень---------- */
+  --shadows-color: rgb(255 0 112 / 1);
+  /* ----------Состояние---------- */
+  --menu-item-hover-color: rgb(255 0 112 / 0.4);
+  --menu-item-focus-color: rgb(255 0 112 / 1);
+  --menu-button-active-color: rgb(255 0 112 / 1);
+  --link-hover-color: rgb(241 178 206 / 1);
+  --link-focus-color: rgb(241 178 206 / 1);
+  /* ----------Декораций---------- */
+  --decoration-color: rgb(255 0 112 / 1);
+  /* ----------Текст---------- */
+  --theme-menu-list-color: rgb(255 0 112 / 1);
+  --title-color: rgb(219 0 255 / 1);
+  --main-title-color: rgb(255 0 112 / 1);
+  --main-text-color: rgb(241 178 206 / 1);
+  --subtitle-text-color: rgb(0 0 40 / 1);
+}
+
+.page.theme_dark {
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .decoration {
+  position: absolute;
+  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  display: flex;
+  height: 26px;
+  align-items: center;
+}

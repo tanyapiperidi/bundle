@@ -1,0 +1,54 @@
+:root {
+  /* ----------Шрифт---------- */
+  --font-family: 'IBM Plex mono';
+  /* ----------Размер текста---------- */
+  --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-text-size: 18px;
+  /* ----------Фон текста---------- */
+  --text-background-color: rgb(255 0 112 / 1);
+  /* ----------Тень---------- */
+  --shadows-color: rgb(255 0 112 / 1);
+  /* ----------Состояние---------- */
+  --menu-item-hover-color: rgb(255 0 112 / 0.4);
+  --menu-item-focus-color: rgb(255 0 112 / 1);
+  --menu-button-active-color: rgb(255 0 112 / 1);
+  --link-hover-color: rgb(241 178 206 / 1);
+  --link-focus-color: rgb(241 178 206 / 1);
+  /* ----------Декораций---------- */
+  --decoration-color: rgb(255 0 112 / 1);
+  /* ----------Текст---------- */
+  --theme-menu-list-color: rgb(255 0 112 / 1);
+  --title-color: rgb(219 0 255 / 1);
+  --main-title-color: rgb(255 0 112 / 1);
+  --main-text-color: rgb(241 178 206 / 1);
+  --subtitle-text-color: rgb(0 0 40 / 1);
+  /* ----------Отступы------------ */
+  --header-padding: min(2.7%, 20px);
+  --header-margin-bottom: 40px;
+  --header__theme-menu_margin-top: clamp(
+    4.0625rem,
+    3.3391rem + 3.0864vw,
+    5.3125rem
+  );
+  --header__theme-menu_margin-bottom: clamp(
+    3.4375rem,
+    -0.139rem + 7.451vw,
+    4.625rem
+  );
+  --header-title-margin-bottom: 20px;
+  --title-line-height: clamp(5.98125rem, 5.7844rem + 0.8397vw, 6.1875rem);
+  --header-text-margin-bottom: clamp(3.5rem, 1.4054rem + 8.9368vw, 7.125rem);
+  --main-margin-inline: 10px;
+  --main-margin-bottom: 40px;
+  --section-first-and-third_column-gap: 20px;
+  --section-margin-bottom: 50px;
+  --section-title-row-gap: 20px;
+  --section-image_row-gap: 10px;
+  --list-gap: 20px;
+  --list-item-title-margin-bottom: 10px;
+  --list-item-subtitle-margin-bottom: 10px;
+  --list-title-image-margin-bottom: 10px;
+  --list-image_gap: 10px;
+  /* --------- Направление flex --------- */
+  --menu-list-direction: column;
+}

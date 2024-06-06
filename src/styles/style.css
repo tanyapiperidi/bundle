@@ -1,0 +1,367 @@
+.page {
+  height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--main-text-size);
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ------------------ Шапка ------------------ */
+
+.header {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  margin-block-end: var(--header-margin-bottom);
+  padding: var(--header-padding);
+}
+
+/* Декор: Уголки */
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-inline-end: 1px solid var(--decoration-color);
+  border-block-start: 1px solid var(--decoration-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  left: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-inline-start: 1px solid var(--decoration-color);
+  border-block-end: 1px solid var(--decoration-color);
+}
+
+/* Декор: REC и точка с тенью */
+
+.decoration {
+  position: absolute;
+  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+  display: flex;
+  align-items: center;
+  height: 26px;
+}
+
+.decoration::before {
+  content: 'REC';
+  color: var(--decoration-color);
+  font-family: var(--font-family);
+}
+
+.decoration::after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: 0 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--decoration-color);
+  background-color: var(--decoration-color);
+}
+
+/* --------- Навигация --------- */
+
+.header__theme-menu {
+  justify-self: end;
+  margin-block-start: var(--header__theme-menu_margin-top);
+  margin-block-end: var(--header__theme-menu_margin-bottom);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: var(--menu-list-direction);
+  gap: 13px;
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid var(--menu-item-hover-color);
+}
+
+.header__theme-menu-button {
+  border: none;
+  padding: 0 13px;
+  color: var(--theme-menu-list-color);
+  text-transform: lowercase;
+  background: transparent;
+  position: relative;
+}
+
+.header__theme-menu-button:focus-visible::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--menu-item-focus-color);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--menu-button-active-color);
+  pointer-events: none;
+}
+
+/* --------- Заголовок --------- */
+
+.title {
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: var(--header-title-size);
+  line-height: var(--title-line-height);
+}
+
+.header-title {
+  margin-block-end: var(--header-title-margin-bottom);
+}
+
+.header-title_shadows {
+  text-shadow: 4px 4px var(--shadows-color);
+}
+
+/* ----- Текст под заголовком ----- */
+
+.header-text {
+  justify-self: end;
+  align-self: end;
+  min-width: 355px;
+  max-width: 50%;
+  height: fit-content;
+  margin-block-end: var(--header-text-margin-bottom);
+  color: var(--subtitle-text-color);
+  font-weight: 700;
+  background-color: var(--text-background-color);
+}
+
+/* ------------------ Основа ------------------ */
+
+.main {
+  margin: 0 var(--main-margin-inline) var(--main-margin-bottom);
+}
+
+.section {
+  display: grid;
+  row-gap: var(--section-title-row-gap);
+}
+
+.section:not(:last-child) {
+  margin-block-end: var(--section-margin-bottom);
+}
+
+/* ----- Заголовок секции ----- */
+
+.section-title {
+  color: var(--main-title-color);
+  font-weight: 700;
+  font-size: inherit;
+}
+
+/* --------- Список -------- */
+
+.list {
+  display: grid;
+  gap: var(--list-gap);
+}
+
+.list-item-title,
+.list-title-image,
+.list-item-subtitle {
+  margin-block-end: var(--list-item-title-margin-bottom);
+  color: var(--subtitle-text-color);
+  font-size: inherit;
+  background-color: var(--text-background-color);
+}
+
+.list-title-image {
+  margin-block-end: var(--list-title-image-margin-bottom);
+}
+
+.list-item-title_not-margin-bottom {
+  margin-block-end: 0;
+}
+
+.list-item-text {
+  color: var(--main-text-color);
+}
+
+.link_underlining-none {
+  text-decoration: none;
+}
+
+.list-item-text-link:hover {
+  border-bottom: 1px solid var(--link-hover-color);
+}
+
+.list-item-text-link:has(:focus-visible) {
+  outline: 1px solid var(--link-focus-color);
+}
+
+.list-item-text-link_shadows {
+  text-shadow: 2px 2px var(--shadows-color);
+}
+
+.list-item-subtitle {
+  margin-block-end: var(--list-item-subtitle-margin-bottom);
+  font-weight: 400;
+}
+
+/* ---------- Секция с картинками ---------- */
+
+.list-item-image img {
+  display: block;
+}
+
+.list-image {
+  gap: var(--list-image_gap);
+}
+
+/* --------- Подвал --------- */
+
+.footer {
+  position: relative;
+  display: grid;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer-title {
+  justify-self: center;
+  align-self: center;
+  text-shadow: 2px 2px var(--shadows-color);
+}
+
+/* --------------- Медиазапросы --------------- */
+
+/* -----------------  Планшет + desktop ----------------- */
+
+@media (min-width: 768px) {
+
+  :root {
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --title-line-height: clamp(6.1875rem, 0.4631rem + 11.9258vw, 8.095625rem);
+    --header-margin-bottom: 60px;
+    --main-margin-inline: 20px;
+    --main-margin-bottom: 60px;
+    --section-margin-bottom: 80px;
+    --section-padding-inline: 20px;
+    --section-title-row-gap: 20px;
+    --section-image_row-gap: 20px;
+    --list-image_gap: 20px;
+    --list-title-image-margin-bottom: 20px;
+    --footer-padding: 10px;
+  }
+
+  .header {
+    padding-left: 0;
+  }
+
+  .section:first-child,
+  .section:nth-child(3) {
+    grid-template-columns: minmax(236px, 1fr) minmax(472px, 2fr);
+
+    /* ----- Для схождения с фигмой ----- */
+
+    column-gap: var(--section-first-and-third_column-gap);
+  }
+
+  .section:nth-child(2) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section:nth-child(2) .list {
+    grid-column: span 3;
+    grid-row-start: 2;
+  }
+
+  .list-image {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list-item-image:first-child,
+  .list-item-image:last-child {
+    grid-column: span 2;
+  }
+
+  .list-item-image:nth-child(2),
+  .list-item-image:nth-child(3) {
+    grid-row: span 2;
+  }
+}
+
+/* ----------------- Планшет ------------------- */
+
+@media (min-height: 1024px) {
+
+  :root {
+    --header__theme-menu_margin-top: 172px;
+    --header__theme-menu_margin-bottom: 173px;
+    --header-title-margin-bottom: 162px;
+    --header-text-margin-bottom: 163px;
+  }
+
+  .header-text {
+    width: 49%;
+  }
+
+  .section-title_half-width {
+    width: 50%;
+  }
+}
+
+/* ----------------- desktop ----------------- */
+
+@media (min-width: 1024px) {
+
+  :root {
+    --header__theme-menu_margin-top: 20px;
+    --header__theme-menu_margin-bottom: 235px;
+    --header-text-margin-bottom: 135px;
+    --menu-list-direction: row;
+    --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-title-margin-bottom: 30px;
+    --header-margin-bottom: 60px;
+    --main-margin-inline: 20px;
+    --main-margin-bottom: 60px;
+    --section-first-and-third_column-gap: 10px;
+    --section-margin-bottom: 80px;
+    --section-padding-inline: 20px;
+    --section-image_row-gap: 20px;
+    --list-image_gap: 20px;
+    --list-title-image-margin-bottom: 20px;
+    --footer-padding: 10px;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+  }
+
+  .header-text {
+    /* ----- Для схождения с фигмой ----- */
+
+    width: 48%;
+    margin-inline-end: 20px;
+  }
+
+  .list_three-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

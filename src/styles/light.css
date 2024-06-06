@@ -1,0 +1,67 @@
+.theme_light {
+  /* ----------Фон текста---------- */
+  --text-background-color: rgb(255 141 203 / 1);
+  /* ----------Тень---------- */
+  --shadows-color: rgb(255 141 203 / 1);
+  /* ----------Состояние---------- */
+  --menu-item-hover-color: rgb(50 49 45 / 0.4);
+  --menu-item-focus-color: rgb(53 52 48 / 1);
+  --menu-button-active-color: rgb(53 52 48 / 1);
+  --link-hover-color: rgb(53 52 48 / 1);
+  --link-focus-color: rgb(53 52 48 / 1);
+  /* ----------Декораций---------- */
+  --decoration-color: rgb(53 52 48 / 1);
+  /* ----------Текст---------- */
+  --theme-menu-list-color: rgb(53 52 48 / 1);
+  --title-color: rgb(255 194 230 / 1);
+  --main-title-color: rgb(53 52 48 / 1);
+  --main-text-color: rgb(53 52 48 / 1);
+  --subtitle-text-color: rgb(53 52 48 / 1);
+}
+
+@media (prefers-color-scheme: light) {
+
+  .theme_light {
+    /* ----------Фон текста---------- */
+    --text-background-color: rgb(255 141 203 / 1);
+    /* ----------Тень---------- */
+    --shadows-color: rgb(255 141 203 / 1);
+    /* ----------Состояние---------- */
+    --menu-item-hover-color: rgb(50 49 45 / 0.4);
+    --menu-item-focus-color: rgb(53 52 48 / 1);
+    --menu-button-active-color: rgb(53 52 48 / 1);
+    --link-hover-color: rgb(53 52 48 / 1);
+    --link-focus-color: rgb(53 52 48 / 1);
+    /* ----------Декораций---------- */
+    --decoration-color: rgb(53 52 48 / 1);
+    /* ----------Текст---------- */
+    --theme-menu-list-color: rgb(53 52 48 / 1);
+    --title-color: rgb(255 194 230 / 1);
+    --main-title-color: rgb(53 52 48 / 1);
+    --main-text-color: rgb(53 52 48 / 1);
+    --subtitle-text-color: rgb(53 52 48 / 1);
+  }
+
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+
+  .decoration {
+    display: none;
+  }
+}
+
+.page.theme_light {
+  background-image: url(../images/cover-image-light.png);
+}
+
+.theme_light .decoration {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+
+  .title {
+    --shadows-color: rgb(255 0 112 / 1);
+  }
+}

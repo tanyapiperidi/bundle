@@ -25,7 +25,13 @@
    3. Desktop - 768 x 1024 
      Список тем изменит напрваление из блочного в строчный, а так же поменяет свое расположение прижимаясь к верху header и будет отцентрирован. Контент второй секции перестраивается в три колонки. В светлой теме заголовок для header и footer сменит цвет тени.
 
+Для корректной работы вам понадобятся:
+   1. Папка src с вложенными папками : fonts, script.js, images, styles
+   2. В папке src вложен файл index.html
 
+
+
+https://github.com/tanyapiperidi/slozhno-sosredotochitsya
 
 Проект был сверстан по макету: https://www.figma.com/design/lCqDbWjgllgJtb2hmCqfyX/%236-%D0%A1%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE-%D1%81%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D0%BE%D1%82%D0%BE%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F?node-id=0-1&t=67dbMUKscbijrnPu-0
 

@@ -21,7 +21,7 @@
 
 @media (prefers-color-scheme: light) {
 
-  .theme_light {
+  :root {
     /* ----------Фон текста---------- */
     --text-background-color: rgb(255 141 203 / 1);
     /* ----------Тень---------- */

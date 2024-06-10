@@ -1,6 +1,6 @@
 :root {
   /* ----------Шрифт---------- */
-  --font-family: 'IBM Plex mono';
+  --font-family: 'IBM Plex mono', monospace;
   /* ----------Размер текста---------- */
   --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-text-size: 18px;
@@ -43,11 +43,9 @@
   --section-first-and-third_column-gap: 20px;
   --section-margin-bottom: 50px;
   --section-title-row-gap: 20px;
-  --section-image_row-gap: 10px;
-  --list-gap: 20px;
+  --list-item-text-margin-bottom: 20px;
   --list-item-title-margin-bottom: 10px;
-  --list-item-subtitle-margin-bottom: 10px;
-  --list-title-image-margin-bottom: 10px;
+  --section-title-image-margin-bottom: 10px;
   --list-image_gap: 10px;
   /* --------- Направление flex --------- */
   --menu-list-direction: column;

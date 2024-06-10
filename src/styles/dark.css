@@ -24,10 +24,5 @@
 }
 
 .theme_dark .decoration {
-  position: absolute;
-  top: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-  right: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
   display: flex;
-  height: 26px;
-  align-items: center;
 }
